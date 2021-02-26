@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import robots from '../robots';
 import './App.css';
+import ErrorBundry from '../components/ErrorBoundry'
 
 
 //koncepcja "stanu" opis aktualny aplikacji 
@@ -56,9 +57,9 @@ class App extends Component {
                     <h1 className="f1">Robo APP</h1>
                     <SearchBox searchChange = {this.onSearchChange} />
                     
-                   
+                    <ErrorBundry>
                         <CardList robots = {filterRobots}/>
-                
+                    </ErrorBundry>
                 </div>
     )}
     }
