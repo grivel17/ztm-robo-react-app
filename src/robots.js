@@ -9,7 +9,8 @@ export const robots = [
       id: 2,
       name: 'Ervin Howell',
       username: 'Antonette',
-      email: 'Shanna@melissa.tv'
+      email: 'Shanna@melissa.tv',
+      zimel: 'trash'
     },
     {
       id: 3,

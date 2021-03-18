@@ -1,0 +1,56 @@
+
+KROK 1 ZBUDUJ APLIKACJE GENERUJACA KARTY W OPARCIU O PLIK JSON DODAJ OOBRAZKI Z API 
+
+
+
+CEL aplikacji: 
+
+1. wyszukiwarka robota po imieniu 
+
+JAK TO DZIAŁA 
+
+1. na stronie gnerwoane są karty z imionami robotow 
+2. wyszukiwarka zmniejsza liczbe robotow zgodnie z dopasowaniem 
+
+ELEMENTY 
+
+1. warstwa html 
+2. api import pliku json z informacjami na temat danych o robocie 
+3. mechanizm redukcji liczby opcji przez dopsowanie 
+
+JAK BYS TO ROBIŁ SAM 
+
+1. budowa kompnentu strony głównej 
+    a. head line 
+    b. input wyszukiwania 
+
+2. mechanizm api pobrania informacji o robotach 
+    a. sprawdzenie jak działa api poprzez jego prezentacje w console log 
+
+3. mechanizm prezentacji danych pobranych z api na stronie głównej 
+
+4. zmiana stanu komponentu renderującego te elemnty na stronie głównej poprzez pobranie informacji
+
+=> przejrzyj kod 
+=> przejrzyj filmy w przyspieszeniu 
+=> zaplanuj taką samą aplikację 
+=> wykonaj kolejne kroki
+!? pomiń stylowanie 
+
+//na początek mozesz skorzystac z pliku json z danymi robotow 
+//zbudowane z wykorzystaniem tachyons 
+// wazne stan robota stan stan pola inputu 
+//funkcja filtrujaca ktora metody include 
+
+!? jaka jest logika kroków budowania takiej aplikacji wypisz je na tej podstawie stworz własny plany takie appki. Pamiętaj o dwoch lekcjach z problemow - 1 zawezaj do malych wezy 2 patrz na problme a nie rozwiazanie (jakie sa mozliwosci)
+
+ETAP 1  BUDOWA KARTY RENDEROWANIE KARTY W OPARCIU O DANE Z PLIKU JSON 
+
+
+// kard component - budujesz jak w samouczku od dołu od czystego html. potem kolejne kawałki 
+//dodajesz na hama img z linkiem do robo hash 
+//<component robots.[0].id name={robots.[0].name itd}
+//element w html zamieniasz props.klucz (w komponencie nie potrzebujesz importu)
+//WYKORZYSTAJA WSZYSTKIE DANE Z  POJEDYNCZEGO OBIEKTU 
+//DESTRUCTOR ES 6 CONST {COSTAM1, COSTAM2} = PROPS
+// albo ({costam1, costam2})
